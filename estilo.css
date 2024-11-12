@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Geologica';
+    box-sizing: border-box;
+}
+
+
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-between; /* Espaço entre as partes esquerda e direita */
+    background: linear-gradient(180deg, #0FABA7 0%, #056E75 100%);
+    padding: 0 20px; /* Espaçamento lateral opcional */
+    background-image: url(imagens/gradient\ 2-03\ 1asda.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+
+.left-side {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 250px;
+    padding-bottom: 300px;
+}
+
+.right-side {
+    width: 40%; /* Ajuste conforme necessário para equilibrar o espaço */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 200px;
+    padding-right: 60px;
+}
+
+.logo,
+h1 {
+    display: inline-flex;
+    color: white;
+    font-family: 'Konkhmer Sleokchher';
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 48.78px;
+    text-align: left;
+}
+
+.logo,
+img {
+    width: 36px;
+    height: 32px;
+}
+
+.titulo {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    padding-top: 100px;
+}
+
+.subtitulo,
+.titulo-input {
+    padding-top: 10px;
+    font-family: 'Geologica';
+    color: white;
+}
+
+.subtitulo {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.titulo-input {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28.75px;
+    text-align: left;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    background: rgba(217, 217, 217, 0.5); /* Fundo com 70% de opacidade */
+    border-radius: 30px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra leve */
+    backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+    border: 1px solid rgba(90, 194, 187, 0.466);
+    gap: 5px;
+}
+
+input[type="email"],
+input[type="password"],
+#tipo-usuario {
+    align-items: center;
+    width: 90%; /* Faz o input ocupar toda a largura disponível */
+    height: 60px;
+    padding: 10px; /* Espaçamento interno */
+    margin: 10px 10px; /* Espaçamento entre os inputs */
+    border: 2px solid rgba(9, 145, 154, 1); /* Borda leve */
+    border-radius: 10px; /* Bordas arredondadas */
+    background: rgba(217, 217, 217, 0.6); /* Fundo 100% opaco */
+    outline: none; /* Remove a borda azul padrão ao focar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: all 0.3s ease; /* Transição suave para os efeitos */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+#tipo-usuario {
+    border-color: #0FABA7; /* Cor de borda ao focar */
+    box-shadow: 0 2px 8px rgba(15, 171, 167, 0.4); /* Sombra mais destacada */
+}
+
+
